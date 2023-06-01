@@ -1,0 +1,92 @@
+:root{
+    --PurpleColor: #c598f8;
+    --lightPurpleColor: #9a4df1;
+    --darkPurpleColor: #1a0856;
+    --textColor: #150461;
+    --h1Color: #100133;
+    --cardColor: #6f44a7;
+    --whiteColor: hsl(0, 0%, 100%);
+    --grayText: rgb(190, 190, 190);
+    --inputColor: hsl(224, 39%, 80%);
+
+    --h1FontSize: 2.5rem;
+    --h2FontSize: 1.25rem;
+    --h3FontSize: 1rem;
+    --normalFontSize: .938rem;
+    --smallFontSize: .813rem;
+    --smallestFontSize: .75rem;
+}
+
+.sideBar{
+    width: 6%;
+    height: auto;
+    display: grid;
+    align-items: flex-start;
+
+    .logoDiv{
+        padding: 1rem;
+        justify-content: center;
+        
+        img{
+            width: 40px;
+        }
+    }
+
+    .menu{
+        width: 100%;
+
+        .navItem{
+            .navList{
+                position: relative;
+                display: grid;
+                justify-content: center;
+                align-items: flex-start;
+                width: 100%;
+                padding: 1rem 0;
+                cursor: pointer;
+                overflow: hidden;
+            
+                &::after{
+                    display: none;
+                    position: absolute;
+                    content: '';
+                    top: 50%;
+                    right: 0;
+                    width: 3px;
+                    height: 25%;
+                    border-radius: 10px;
+                    transition: .3s ease;
+                    background: var(--lightPurpleColor);
+                }
+
+                &::before{
+                    display: none;
+                    position: absolute;
+                    content: '';
+                    bottom: 50%;
+                    right: 0;
+                    width: 3px;
+                    height: 25%;
+                    border-radius: 10px;
+                    transition: .3s ease;
+                    background: var(--darkPurpleColor);
+                }
+
+                .icon{
+                    width: 100%;
+                    color: var(--grayText);
+                }
+
+                &:hover{
+                    &::after, &::before{
+                        display: block;
+                    }
+
+                    .icon{
+                        color: var(--darkPurpleColor);
+                    }
+                }
+            }
+        }
+    }
+}

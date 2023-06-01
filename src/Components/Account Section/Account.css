@@ -1,0 +1,132 @@
+:root {
+  --PurpleColor: #c598f8;
+  --lightPurpleColor: #9a4df1;
+  --darkPurpleColor: #1a0856;
+  --textColor: #150461;
+  --h1Color: #100133;
+  --cardColor: #6f44a7;
+  --whiteColor: hsl(0, 0%, 100%);
+  --grayText: rgb(190, 190, 190);
+  --inputColor: hsl(224, 39%, 80%);
+  --h1FontSize: 2.5rem;
+  --h2FontSize: 1.25rem;
+  --h3FontSize: 1rem;
+  --normalFontSize: .938rem;
+  --smallFontSize: .813rem;
+  --smallestFontSize: .75rem;
+}
+
+.Account {
+  width: 25%;
+  background: linear-gradient(rgb(4, 69, 97), hsla(183, 98%, 18%, 0.051)), url(../../Assets/cardImage.jpg);
+  height: -moz-max-content;
+  height: max-content;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+  padding: 2rem 2.5rem;
+}
+.Account .icons {
+  justify-content: space-between;
+  color: var(--whiteColor);
+  cursor: pointer;
+}
+.Account .icons .icon {
+  background: rgba(255, 255, 255, 0.151);
+  border-radius: 50%;
+  padding: 0.4rem;
+  height: 30px;
+  width: 30px;
+}
+.Account .accountDetails {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  margin-top: 2rem;
+}
+.Account .accountDetails .imageDiv {
+  display: grid;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+}
+.Account .accountDetails .imageDiv .img {
+  width: 70px;
+  display: block;
+  margin: auto;
+  background: --imageBg;
+  border-radius: 50%;
+  padding: 5px;
+  margin-bottom: 1rem;
+}
+.Account .accountDetails .imageDiv .name {
+  font-size: var(--h2FontSize);
+  color: var(--whiteColor);
+  font-weight: 500;
+}
+.Account .accountDetails .imageDiv .position {
+  padding: 0.5rem 0;
+  color: var(--whiteColor);
+  opacity: 0.6;
+  font-size: var(--smallFontSize);
+}
+.Account .accountDetails .imageDiv .btn {
+  border-radius: 3rem;
+  margin: 1rem 0;
+  width: 170px;
+  gap: 1rem;
+}
+.Account .accountDetails .imageDiv .btn:hover {
+  background: var(--inputColor);
+  color: var(--textColor);
+}
+.Account .accountDetails .hoursDiv {
+  margin-top: 1rem;
+  text-align: center;
+}
+.Account .accountDetails .hoursDiv .title {
+  color: var(--whiteColor);
+  font-weight: 500;
+  padding-bottom: 0.5rem;
+  font-size: var(--h3FontSize);
+  display: block;
+  margin-bottom: 0.3rem;
+}
+.Account .accountDetails .hoursDiv .hoursCard {
+  margin: auto;
+  padding: 0.5rem;
+  background: var(--cardColor);
+  justify-content: space-between;
+  width: -moz-max-content;
+  width: max-content;
+  gap: 1rem;
+  border-radius: 1rem;
+}
+.Account .accountDetails .hoursDiv .hoursCard .right, .Account .accountDetails .hoursDiv .hoursCard .left {
+  color: var(--whiteColor);
+}
+.Account .accountDetails .hoursDiv .hoursCard .right span, .Account .accountDetails .hoursDiv .hoursCard .left span {
+  display: block;
+  font-size: var(--smallFontSize);
+  padding-bottom: 0.3rem;
+}
+.Account .accountDetails .hoursDiv .hoursCard .right h6, .Account .accountDetails .hoursDiv .hoursCard .left h6 {
+  font-size: var(--h3FontSize);
+}
+.Account .accountDetails .hoursDiv .hoursCard .bg, .Account .accountDetails .hoursDiv .hoursCard .noBg {
+  background: var(--whiteColor);
+  padding: 1rem 2rem;
+  color: var(--darkPurpleColor);
+  border-radius: 0.7rem;
+}
+.Account .accountDetails .hoursDiv .hoursCard .noBg {
+  background: transparent;
+  color: var(--whiteColor);
+}
+.Account .city {
+  color: var(--whiteColor);
+  text-align: center;
+  margin-top: 1rem;
+  padding: 0.5rem 0;
+}/*# sourceMappingURL=Account.css.map */
